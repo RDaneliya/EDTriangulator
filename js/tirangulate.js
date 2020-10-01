@@ -15,7 +15,7 @@ const candidates = document.getElementById('candidates');
 const edsmUrl = new URL('https://www.edsm.net/api-v1/sphere-systems');
 
 const loadSystems = (params) => {
-  const fetchUrl = `${edsmUrl}/?systemName=${params.systemName}&minRadius=${params.minRadius}&radius=${params.radius}`;
+  const fetchUrl = `${edsmUrl}?systemName=${params.systemName}&minRadius=${params.minRadius}&radius=${params.radius}`;
   return fetch(fetchUrl)
     .then(response => {
       return response.json();
@@ -87,7 +87,7 @@ const submitForm = () => {
   const params = [];
   for(let i in systems) {
     const sysParam = {
-      systemName: systems[i].value.replace(' ', '+'),
+      systemName: systems[i].value.replace(/\s/, '+'),
       minRadius: minRanges[i].value,
       radius: maxRanges[i].value
     };
