@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Triangulator</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/tirangulate.js" defer></script>
+</head>
+<body>
+  <form class="d-flex container flex-column justify-content-around" id="form" action=""
+        onsubmit="submitForm()">
+    <div class="sys-group">
+      <label for="first-sys">First system name</label>
+      <input class="form-control sys" id="first-sys" placeholder="Enter first system" required>
+      <div class="d-flex distances">
+        <input class="form-control sys-min-dist"
+               placeholder="Enter minimal distance to target" required>
+        <input class="form-control sys-max-dist"
+               placeholder="Enter max distance to target" required>
+      </div>
+    </div>
+    <div class="sys-group">
+      <label for="second-sys">Second system name</label>
+      <input class="form-control sys" id="second-sys" placeholder="Enter second system" required>
+      <div class="d-flex distances">
+        <input class="form-control sys-min-dist"
+               placeholder="Enter minimal distance to target" required>
+        <input class="form-control sys-max-dist"
+               placeholder="Enter max distance to target" required>
+      </div>
+    </div>
+    <div class="sys-group">
+      <label for="third-sys">Third system name</label>
+      <input class="form-control sys" id="third-sys" placeholder="Enter third system" required>
+      <div class="d-flex distances">
+        <input class="form-control sys-min-dist"
+               placeholder="Enter minimal distance to target" required>
+        <input class="form-control sys-max-dist"
+               placeholder="Enter max distance to target" required>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary " id="submit-btn">Triangulate!</button>
+  </form>
+  <div id="result" class="container d-flex flex-column justify-content-center">
+    <ul id="candidates" class="list-group">
+    </ul>
+  </div>
+</body>
+</html>

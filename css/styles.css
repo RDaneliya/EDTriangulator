@@ -1,0 +1,21 @@
+.sys-group{
+  margin: 20px 0 20px 0;
+}
+.distances{
+  margin: 10px 0 10px 0; !important;
+}
+.distances > .sys-min-dist{
+  margin-right: 5px;
+}
+.distances > .sys-max-dist{
+  margin-left: 5px;
+}
+#submit-btn{
+  margin: auto;
+}
+#result{
+  padding: 40px;
+}
+#candidates{
+  margin: auto;
+}
