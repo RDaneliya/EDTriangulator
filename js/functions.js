@@ -1,7 +1,4 @@
 const getSysCandidates = async(sysParams, ul) => {
-  // for(const i of sysParams) {
-  //   await loadSystems(i).then(systems => systemsCandidates.push(systems));
-  // }
   Promise.all([
     loadSystems(sysParams[0]),
     loadSystems(sysParams[1]),
