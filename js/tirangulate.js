@@ -1,7 +1,5 @@
 'use strict';
 
-const form = document.getElementById('form');
-
 const firstSys = document.getElementById('first-sys');
 const secondSys = document.getElementById('second-sys');
 const thirdSys = document.getElementById('third-sys');
@@ -15,6 +13,7 @@ const candidates = document.getElementById('candidates');
 const edsmUrl = new URL('https://www.edsm.net/api-v1/sphere-systems');
 
 
+// eslint-disable-next-line no-unused-vars
 const submitForm = () => {
   event.preventDefault();
   const params = [];
