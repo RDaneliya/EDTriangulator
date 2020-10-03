@@ -1,0 +1,21 @@
+{
+  "name": "ed-triangulator",
+  "version": "1.0.0",
+  "description": "The **EDTriangulator** is a simple app for Commanders to find systems from [listening posts](https://canonn.science/codex/listening-posts/) using [EDSM](https://www.edsm.net/) API",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BANTYC/EDTriangulator.git"
+  },
+  "author": "Roman Daneliya <rdaneliya@yandex.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BANTYC/EDTriangulator/issues"
+  },
+  "homepage": "https://github.com/BANTYC/EDTriangulator#readme",
+  "devDependencies": {
+    "eslint": "^7.10.0"
+  }
+}
