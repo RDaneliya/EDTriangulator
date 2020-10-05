@@ -3,12 +3,13 @@
 }
 .distances{
   margin: 10px 0 10px 0; !important;
+  flex-wrap: wrap;
 }
 .distances > .sys-min-dist{
-  margin-right: 5px;
+  margin: 10px;
 }
 .distances > .sys-max-dist{
-  margin-left: 5px;
+  margin: 10px;
 }
 #submit-btn{
   margin: auto;

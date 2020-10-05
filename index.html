@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Triangulator</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -11,16 +12,16 @@
         type="image/png">
 </head>
 <body>
-  <form class="d-flex container flex-column justify-content-around" id="form" action=""
+  <form class="d-flex container-fluid flex-column justify-content-around" id="form" action=""
         onsubmit="submitForm()">
     <div class="sys-group">
       <label for="first-sys">First system name</label>
       <input autocomplete="off" class="form-control sys" id="first-sys"
              placeholder="Enter first system" required>
       <div class="d-flex distances">
-        <input class="form-control sys-min-dist"
+        <input class="form-control sys-min-dist col-lg-4"
                placeholder="Enter minimal distance to target" required>
-        <input class="form-control sys-max-dist"
+        <input class="form-control sys-max-dist col-lg-4"
                placeholder="Enter max distance to target" required>
       </div>
     </div>
@@ -29,9 +30,9 @@
       <input autocomplete="off" class="form-control sys" id="second-sys"
              placeholder="Enter second system" required>
       <div class="d-flex distances">
-        <input class="form-control sys-min-dist"
+        <input class="form-control sys-min-dist col-lg-4"
                placeholder="Enter minimal distance to target" required>
-        <input class="form-control sys-max-dist"
+        <input class="form-control sys-max-dist col-lg-4"
                placeholder="Enter max distance to target" required>
       </div>
     </div>
@@ -40,9 +41,9 @@
       <input autocomplete="off" class="form-control sys" id="third-sys"
              placeholder="Enter third system" required>
       <div class="d-flex distances">
-        <input class="form-control sys-min-dist"
+        <input class="form-control sys-min-dist col-lg-4"
                placeholder="Enter minimal distance to target" required>
-        <input class="form-control sys-max-dist"
+        <input class="form-control sys-max-dist col-lg-4"
                placeholder="Enter max distance to target" required>
       </div>
     </div>
