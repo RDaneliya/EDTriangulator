@@ -12,7 +12,9 @@ const getSysCandidates = async(sysParams, ul) => {
 
 const loadSystems = (params) => {
   // eslint-disable-next-line no-undef
-  const fetchUrl = `${edsmUrl}?systemName=${params.systemName}&minRadius=${params.minRadius}&radius=${params.radius}`;
+  //const fetchUrl = `${edsmUrl}?systemName=${params.systemName}&minRadius=${params.minRadius}&radius=${params.radius}`;
+  let fetchUrl = new URL(edsmUrl);
+  Object.keys(params).forEach(key => fetchUrl.searchParams.append(key, params[key]));
   return fetch(fetchUrl)
     .then(response => {
       return response.json();
