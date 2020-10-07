@@ -10,6 +10,7 @@ const maxRanges = document.getElementsByClassName('sys-max-dist');
 
 const candidates = document.getElementById('candidates');
 
+// eslint-disable-next-line no-unused-vars
 const edsmUrl = new URL('https://www.edsm.net/api-v1/sphere-systems');
 
 
@@ -26,6 +27,7 @@ const submitForm = () => {
     params.push(sysParam);
   }
 
+  // eslint-disable-next-line no-undef
   getSysCandidates(params, candidates);
 };
 

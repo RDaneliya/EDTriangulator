@@ -1,16 +1,17 @@
+// eslint-disable-next-line no-unused-vars
 const getSysCandidates = async(sysParams, ul) => {
   Promise.all([
     loadSystems(sysParams[0]),
     loadSystems(sysParams[1]),
     loadSystems(sysParams[2])
   ]).then(([sys0, sys1, sys2]) => {
-    const systemsCandidates = [sys0, sys1, sys2];
-    const result = intersect(systemsCandidates);
+    const result = intersect([sys0, sys1, sys2]);
     showArray(result, ul);
   });
 };
 
 const loadSystems = (params) => {
+  // eslint-disable-next-line no-undef
   const fetchUrl = `${edsmUrl}?systemName=${params.systemName}&minRadius=${params.minRadius}&radius=${params.radius}`;
   return fetch(fetchUrl)
     .then(response => {
@@ -23,7 +24,7 @@ const loadSystems = (params) => {
 };
 
 const cutField = (data, fieldName) => {
-  if(data[0].hasOwnProperty(`${fieldName}`)) {
+  if(Object.prototype.hasOwnProperty.call(data[0], `${fieldName}`)) {
     const dataWithoutField = [];
     for(let i of data) {
       delete i[fieldName];
