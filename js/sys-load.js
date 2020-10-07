@@ -1,4 +1,6 @@
 $('.sys-dropdown').select2({
+  placeholder: 'Search for a system...',
+  theme: 'bootstrap4',
   ajax: {
     url: 'https://system.api.fuelrats.com/typeahead',
     dataType: 'json',

@@ -7,6 +7,7 @@
   <link href="https://img.icons8.com/carbon-copy/100/000000/gps-searching.png" rel="icon"
         type="image/png">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/select2-bootstrap4.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
         rel="stylesheet"/>
@@ -22,8 +23,8 @@
   <form class="d-flex container-fluid flex-column justify-content-around" id="form" action=""
         onsubmit="submitForm()">
     <div class="sys-group">
-      <select class="sys-dropdown w-100 form-control" id="first-sys">
-        <option value="" selected="" class="form-control">Search for a system...</option>
+      <select class="sys-dropdown w-100 form-control" style="height: 1.5rem" id="first-sys">
+        <option value="" selected="" class="form-control"></option>
       </select>
       <div class="d-flex distances">
         <input class="form-control sys-min-dist col-lg-4"
@@ -34,7 +35,7 @@
     </div>
     <div class="sys-group">
       <select class="sys-dropdown w-100 form-control" id="second-sys">
-        <option value="" selected="" class="form-control">Search for a system...</option>
+        <option value="" selected="" class="form-control"></option>
       </select>
       <div class="d-flex distances">
         <input class="form-control sys-min-dist col-lg-4"
@@ -44,8 +45,8 @@
       </div>
     </div>
     <div class="sys-group">
-      <select class="sys-dropdown w-100 form-control" id="third-sys">
-        <option value="" selected="" class="form-control">Search for a system...</option>
+      <select class="sys-dropdown w-100 form-control select2" id="third-sys">
+        <option value="" selected="" class="form-control"></option>
       </select>
       <div class="d-flex distances">
         <input class="form-control sys-min-dist col-lg-4"

@@ -1,22 +1,29 @@
-.sys-group{
+.sys-group {
   margin: 20px 0 20px 0;
 }
-.distances{
-  margin: 10px 0 10px 0; !important;
+
+.distances {
+  margin: 10px 0 10px 0;
+!important;
   flex-wrap: wrap;
 }
-.distances > .sys-min-dist{
+
+.distances > .sys-min-dist {
   margin: 10px;
 }
-.distances > .sys-max-dist{
+
+.distances > .sys-max-dist {
   margin: 10px;
 }
-#submit-btn{
+
+#submit-btn {
   margin: auto;
 }
-#result{
+
+#result {
   padding: 40px;
 }
-#candidates{
+
+#candidates {
   margin: auto;
 }
