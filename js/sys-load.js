@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 $('.sys-dropdown').select2({
   placeholder: 'Search for a system...',
   theme: 'bootstrap4',
@@ -12,6 +13,7 @@ $('.sys-dropdown').select2({
     },
     processResults: (data) => {
       return {
+        // eslint-disable-next-line no-undef
         results: $.map(data, (item) => {
           return {
             id: data.indexOf(item),
@@ -24,3 +26,7 @@ $('.sys-dropdown').select2({
   },
   minimumInputLength: 3
 });
+
+const getValue = (elementId) => {
+  return  $(`#${elementId}`).select2('data')[0]
+};
