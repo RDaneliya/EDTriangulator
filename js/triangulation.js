@@ -17,7 +17,6 @@ const submitForm = () => {
     getValue('third-sys')
   ];
 
-
   event.preventDefault();
   const params = [];
   for(let i in systems) {
